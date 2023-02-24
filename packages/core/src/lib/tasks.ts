@@ -1,5 +1,5 @@
 import execa from "execa";
-import { ensureDir, rename, copy, readFile, rm, writeFile, remove, pathExists } from "fs-extra";
+import { ensureDir, rename, copy, readFile, rm, writeFile, remove } from "fs-extra";
 import path from "node:path";
 import globby from "globby";
 import handlebars from "handlebars";
@@ -29,7 +29,8 @@ export async function copyTemplateFiles(
   templatesPath: string,
   contractTemplatePath: string,
   contractName: string,
-  projectPath: string
+  projectPath: string,
+  contractLanguage: string
 ) {
   await ensureDir(projectPath);
   const commonFiles = await globby(`*`, { cwd: templatesPath });
@@ -38,6 +39,8 @@ export async function copyTemplateFiles(
       await copy(path.resolve(templatesPath, file), path.resolve(projectPath, file));
     })
   );
+  if (contractLanguage === "ink")
+    await copy(path.resolve(contractTemplatePath, "Cargo.toml.hbs"), path.resolve(projectPath, "Cargo.toml.hbs"))
   await rename(path.resolve(projectPath, "gitignore"), path.resolve(projectPath, ".gitignore"));
   await copyContractTemplateFiles(contractTemplatePath, contractName, projectPath);
 }
