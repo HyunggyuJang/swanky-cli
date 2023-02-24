@@ -96,11 +96,3 @@ export class CompileContract extends Command {
     }, "Writing config");
   }
 }
-
-// https://github.com/Supercolony-net/typechain-polkadot#usage-of-typechain-compiler
-interface TypechainCompilerConfig {
-  projectFiles: string[]; // Path to all project files, everystring in glob format
-  skipLinting : boolean; // Skip linting of project files
-  artifactsPath : string; // Path to artifacts folder, where artifacts will be stored it will save both .contract and .json (contract ABI)
-  typechainGeneratedPath : string; // Path to typechain generated folder
-}
