@@ -84,11 +84,11 @@ export async function generateTypesFor(
   if (language === "ink") {
     await Promise.all([
       fs.copyFile(
-        path.resolve(contractPath, "target", "ink", `${contractName}.contract`),
+        path.resolve("target", "ink", contractName, `${contractName}.contract`),
         path.resolve(ARTIFACTS_PATH, `${contractName}.contract`),
       ),
       fs.copyFile(
-        path.resolve(contractPath, "target", "ink", `${contractName}.json`),
+        path.resolve("target", "ink", contractName, `${contractName}.json`),
         path.resolve(ARTIFACTS_PATH, `${contractName}.json`),
       )
     ])
