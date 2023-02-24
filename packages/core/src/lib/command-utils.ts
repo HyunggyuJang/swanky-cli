@@ -82,6 +82,7 @@ export async function generateTypesFor(
 ) {
   // Firstly, need to copy wasm blob and abi.json to workspace folder
   if (language === "ink") {
+    // The compiled ink contracts are under workspace folder
     await Promise.all([
       fs.copyFile(
         path.resolve("target", "ink", contractName, `${contractName}.contract`),
