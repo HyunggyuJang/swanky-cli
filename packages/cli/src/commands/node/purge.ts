@@ -1,6 +1,6 @@
 import { Command } from "@oclif/core";
 import execa from "execa";
-import { ensureSwankyProject, getSwankyConfig } from "@astar-network/swanky-core";
+import { ensureSwankyProject, getSwankyConfig } from "@arthswap/swanky-core";
 export class PurgeNode extends Command {
   static description = "Purge local chain state";
 

@@ -2,7 +2,7 @@ import { BaseCommand } from "../../lib/baseCommand";
 import * as fs from "fs-extra";
 import path = require("node:path");
 import { readdirSync } from "node:fs";
-import { printContractInfo } from "@astar-network/swanky-core";
+import { printContractInfo } from "@arthswap/swanky-core";
 
 export class ExplainContract extends BaseCommand<typeof ExplainContract> {
   static description = "Explain contract messages based on thier metadata";

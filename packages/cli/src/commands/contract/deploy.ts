@@ -13,7 +13,7 @@ import {
   Encrypted,
   decrypt,
   AbiType as Abi,
-} from "@astar-network/swanky-core";
+} from "@arthswap/swanky-core";
 import inquirer from "inquirer";
 import chalk = require("chalk");
 

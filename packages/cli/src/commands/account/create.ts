@@ -7,7 +7,7 @@ import {
   ChainAccount,
   encrypt,
   AccountData,
-} from "@astar-network/swanky-core";
+} from "@arthswap/swanky-core";
 import inquirer from "inquirer";
 export class CreateAccount extends Command {
   static description = "Create a new dev account in config";

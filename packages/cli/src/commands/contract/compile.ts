@@ -9,7 +9,7 @@ import {
   BuildData,
   Spinner,
   generateTypesFor,
-} from "@astar-network/swanky-core";
+} from "@arthswap/swanky-core";
 import { writeJSON } from "fs-extra";
 
 export class CompileContract extends Command {

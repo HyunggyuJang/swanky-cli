@@ -8,7 +8,7 @@ import {
   Spinner,
   generateTypes,
   consts,
-} from "@astar-network/swanky-core";
+} from "@arthswap/swanky-core";
 const {
   ARTIFACTS_PATH,
   TYPED_CONTRACT_PATH,
