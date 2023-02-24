@@ -81,7 +81,8 @@ export class Init extends Command {
           templates.templatesPath,
           path.resolve(templates.contractTemplatesPath, answers.contractTemplate),
           answers.contractName,
-          projectPath
+          projectPath,
+          contractLanguage
         ),
       "Copying template files"
     );
