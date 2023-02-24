@@ -17,7 +17,7 @@ $ npm install -g @arthswap/swanky-cli
 $ swanky COMMAND
 running command...
 $ swanky (--version|-V|-v)
-@arthswap/swanky-cli/0.0.1 darwin-arm64 node-v18.14.2
+@arthswap/swanky-cli/0.0.2-alpha.0 darwin-arm64 node-v18.14.2
 $ swanky --help [COMMAND]
 USAGE
   $ swanky COMMAND
@@ -112,7 +112,7 @@ DESCRIPTION
   Check installed package versions and compatibility
 ```
 
-_See code: [dist/commands/check/index.js](https://github.com/AstarNetwork/swanky-cli/blob/v0.0.1/dist/commands/check/index.js)_
+_See code: [dist/commands/check/index.js](https://github.com/AstarNetwork/swanky-cli/blob/v0.0.2-alpha.0/dist/commands/check/index.js)_
 
 ## `swanky contract compile CONTRACTNAME`
 
@@ -295,7 +295,7 @@ DESCRIPTION
   Generate a new smart contract environment
 ```
 
-_See code: [dist/commands/init/index.js](https://github.com/AstarNetwork/swanky-cli/blob/v0.0.1/dist/commands/init/index.js)_
+_See code: [dist/commands/init/index.js](https://github.com/AstarNetwork/swanky-cli/blob/v0.0.2-alpha.0/dist/commands/init/index.js)_
 
 ## `swanky node purge`
 
