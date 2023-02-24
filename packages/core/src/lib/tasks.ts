@@ -40,7 +40,10 @@ export async function copyTemplateFiles(
     })
   );
   if (contractLanguage === "ink")
-    await copy(path.resolve(contractTemplatePath, "Cargo.toml.hbs"), path.resolve(projectPath, "Cargo.toml.hbs"))
+    await copy(
+      path.resolve(contractTemplatePath, "Cargo.toml.hbs"),
+      path.resolve(projectPath, "Cargo.toml.hbs")
+    );
   await rename(path.resolve(projectPath, "gitignore"), path.resolve(projectPath, ".gitignore"));
   await copyContractTemplateFiles(contractTemplatePath, contractName, projectPath);
 }
