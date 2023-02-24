@@ -17,7 +17,7 @@ $ npm install -g @arthswap/swanky-cli
 $ swanky COMMAND
 running command...
 $ swanky (--version|-V|-v)
-@arthswap/swanky-cli/1.0.11 darwin-x64 node-v18.2.0
+@arthswap/swanky-cli/0.0.1 darwin-arm64 node-v18.14.2
 $ swanky --help [COMMAND]
 USAGE
   $ swanky COMMAND
@@ -34,6 +34,7 @@ USAGE
 * [`swanky check`](#swanky-check)
 * [`swanky contract compile CONTRACTNAME`](#swanky-contract-compile-contractname)
 * [`swanky contract deploy CONTRACTNAME`](#swanky-contract-deploy-contractname)
+* [`swanky contract explain CONTRACTNAME`](#swanky-contract-explain-contractname)
 * [`swanky contract new CONTRACTNAME`](#swanky-contract-new-contractname)
 * [`swanky contract query CONTRACTNAME MESSAGENAME`](#swanky-contract-query-contractname-messagename)
 * [`swanky contract tx CONTRACTNAME MESSAGENAME`](#swanky-contract-tx-contractname-messagename)
@@ -111,7 +112,7 @@ DESCRIPTION
   Check installed package versions and compatibility
 ```
 
-_See code: [dist/commands/check/index.js](https://github.com/AstarNetwork/swanky-cli/blob/v1.0.11/dist/commands/check/index.js)_
+_See code: [dist/commands/check/index.js](https://github.com/AstarNetwork/swanky-cli/blob/v0.0.1/dist/commands/check/index.js)_
 
 ## `swanky contract compile CONTRACTNAME`
 
@@ -152,6 +153,24 @@ FLAGS
 
 DESCRIPTION
   Deploy contract to a running node
+```
+
+## `swanky contract explain CONTRACTNAME`
+
+Explain contract messages based on thier metadata
+
+```
+USAGE
+  $ swanky contract explain [CONTRACTNAME] [-v]
+
+ARGUMENTS
+  CONTRACTNAME  Name of the contract
+
+FLAGS
+  -v, --verbose  Display more info in the result logs
+
+DESCRIPTION
+  Explain contract messages based on thier metadata
 ```
 
 ## `swanky contract new CONTRACTNAME`
@@ -276,7 +295,7 @@ DESCRIPTION
   Generate a new smart contract environment
 ```
 
-_See code: [dist/commands/init/index.js](https://github.com/AstarNetwork/swanky-cli/blob/v1.0.11/dist/commands/init/index.js)_
+_See code: [dist/commands/init/index.js](https://github.com/AstarNetwork/swanky-cli/blob/v0.0.1/dist/commands/init/index.js)_
 
 ## `swanky node purge`
 
