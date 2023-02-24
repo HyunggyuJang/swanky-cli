@@ -1,6 +1,6 @@
 import { Command, Flags } from "@oclif/core";
 import execa from "execa";
-import { ensureSwankyProject, getSwankyConfig } from "@astar-network/swanky-core";
+import { ensureSwankyProject, getSwankyConfig } from "@arthswap/swanky-core";
 export class StartNode extends Command {
   static description = "Start a local node";
 

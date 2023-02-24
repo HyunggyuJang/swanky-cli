@@ -1,6 +1,6 @@
 import { Command } from "@oclif/core";
 import chalk = require("chalk");
-import { AccountData, ensureSwankyProject, getSwankyConfig } from "@astar-network/swanky-core";
+import { AccountData, ensureSwankyProject, getSwankyConfig } from "@arthswap/swanky-core";
 
 export class CreateAccount extends Command {
   static description = "List dev accounts stored in config";

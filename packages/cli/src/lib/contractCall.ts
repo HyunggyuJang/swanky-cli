@@ -8,7 +8,7 @@ import {
   DeploymentData,
   Encrypted,
   resolveNetworkUrl,
-} from "@astar-network/swanky-core";
+} from "@arthswap/swanky-core";
 import path = require("node:path");
 import { Command, Flags, Interfaces } from "@oclif/core";
 import inquirer from "inquirer";

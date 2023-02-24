@@ -13,11 +13,11 @@
 
 <!-- usage -->
 ```sh-session
-$ npm install -g @astar-network/swanky-cli
+$ npm install -g @arthswap/swanky-cli
 $ swanky COMMAND
 running command...
 $ swanky (--version|-V|-v)
-@astar-network/swanky-cli/1.0.11 darwin-x64 node-v18.2.0
+@arthswap/swanky-cli/1.0.11 darwin-x64 node-v18.2.0
 $ swanky --help [COMMAND]
 USAGE
   $ swanky COMMAND

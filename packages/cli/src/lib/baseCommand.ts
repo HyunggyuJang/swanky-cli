@@ -1,5 +1,5 @@
 import { Command, Flags, Interfaces } from "@oclif/core";
-import { getSwankyConfig, Spinner, SwankyConfig } from "@astar-network/swanky-core";
+import { getSwankyConfig, Spinner, SwankyConfig } from "@arthswap/swanky-core";
 
 export type BaseCommandFlags<T extends typeof Command> = Interfaces.InferredFlags<
   typeof BaseCommand["globalFlags"] & T["flags"]

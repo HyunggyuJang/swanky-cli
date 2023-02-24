@@ -16,8 +16,8 @@ import {
   consts,
   Spinner,
   swankyNode,
-} from "@astar-network/swanky-core";
-import { getAllTemplateNames, getTemplates } from "@astar-network/swanky-templates";
+} from "@arthswap/swanky-core";
+import { getAllTemplateNames, getTemplates } from "@arthswap/swanky-templates";
 const {
   DEFAULT_ASTAR_NETWORK_URL,
   DEFAULT_NETWORK_URL,

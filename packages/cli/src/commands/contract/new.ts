@@ -8,8 +8,8 @@ import {
   checkCliDependencies,
   copyContractTemplateFiles,
   processTemplates,
-} from "@astar-network/swanky-core";
-import { getAllTemplateNames, getTemplates } from "@astar-network/swanky-templates";
+} from "@arthswap/swanky-core";
+import { getAllTemplateNames, getTemplates } from "@arthswap/swanky-templates";
 import { email, name, pickLanguage, pickTemplate } from "../../lib/prompts";
 import { paramCase, pascalCase, snakeCase } from "change-case";
 import execa = require("execa");
