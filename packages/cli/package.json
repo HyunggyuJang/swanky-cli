@@ -1,6 +1,6 @@
 {
   "name": "@arthswap/swanky-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Astar network WASM contract CLI tool",
   "author": "Astar network",
   "bin": {
@@ -17,8 +17,8 @@
     "/oclif.manifest.json"
   ],
   "dependencies": {
-    "@arthswap/swanky-core": "0.0.0",
-    "@arthswap/swanky-templates": "0.0.0",
+    "@arthswap/swanky-core": "^0.0.1",
+    "@arthswap/swanky-templates": "^0.0.1",
     "@oclif/core": "1.26.0",
     "@oclif/plugin-help": "5.1.17",
     "@oclif/plugin-plugins": "2.1.4",
