@@ -1,6 +1,6 @@
 {
   "name": "@arthswap/swanky-templates",
-  "version": "0.0.6-alpha.0",
+  "version": "0.0.9-alpha.0",
   "description": "Templates for initialising Swanky projects",
   "author": "Astar network",
   "license": "MIT",
